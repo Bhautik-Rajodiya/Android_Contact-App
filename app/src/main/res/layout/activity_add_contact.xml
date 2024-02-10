@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContactActivity"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/aAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Contact"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:id="@+id/contactImage"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_below="@id/aAppbar"
+       android:src="@drawable/ic_launcher_background"
+       android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/contactNameEditText"
+        android:layout_below="@id/contactImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Name"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/contactNumberEditText"
+        android:layout_below="@id/contactNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Number"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactNumberEditText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Add" />
+
+
+</RelativeLayout>
