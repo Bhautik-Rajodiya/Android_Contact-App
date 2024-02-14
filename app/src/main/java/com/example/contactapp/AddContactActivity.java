@@ -36,8 +36,10 @@ public class AddContactActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String name = binding.contactNameEditText.getText().toString();
                 String number = binding.contactNumberEditText.getText().toString();
+                String email = binding.contactEmailEditText.getText().toString();
 
-                ContactModel model = new ContactModel(name,number);
+
+                ContactModel model = new ContactModel(name,number,imageurl,email);
                 MainActivity.contactModelList.add(model);
                 finish();
             }
