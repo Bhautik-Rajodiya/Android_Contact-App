@@ -16,9 +16,6 @@
             android:name=".UpdateContactActivity"
             android:exported="false" />
         <activity
-            android:name=".update_data_activity"
-            android:exported="false" />
-        <activity
             android:name=".AddContactActivity"
             android:exported="false" />
         <activity
