@@ -22,7 +22,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ContactAdpter extends RecyclerView.Adapter<ContactAdpter.DataViewHolder> {
     Activity activity;
-    List<ContactModel> contactModelList = new ArrayList<>();
+  List<ContactModel> contactModelList = new ArrayList<>();
 
     public ContactAdpter(Activity activity,List<ContactModel> contactModelList){
         this.activity = activity;
@@ -38,9 +38,11 @@ public class ContactAdpter extends RecyclerView.Adapter<ContactAdpter.DataViewHo
 
     @Override
     public void onBindViewHolder(@NonNull DataViewHolder holder, int position) {
+
         holder.contactName.setText(contactModelList.get(position).name);
         holder.contactNumber.setText(contactModelList.get(position).number);
         holder.contactImage.setImageURI(contactModelList.get(position).image);
+
 
         holder.tileLiner.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +52,7 @@ public class ContactAdpter extends RecyclerView.Adapter<ContactAdpter.DataViewHo
                 intent.putExtra("image",contactModelList.get(position).image);
                 intent.putExtra("number",contactModelList.get(position).number);
                 intent.putExtra("email",contactModelList.get(position).email);
+                intent.putExtra("position",position);
                 activity.startActivity(intent);
             }
         });

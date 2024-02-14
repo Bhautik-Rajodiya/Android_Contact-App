@@ -80,4 +80,35 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/contactDelete"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/delete"
+            android:text="Delete"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FF0000"/>
+
+        <TextView
+            android:id="@+id/contactEdit"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:src="@drawable/edit"
+            android:layout_width="30dp"
+            android:text="Edit"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
 </RelativeLayout>
