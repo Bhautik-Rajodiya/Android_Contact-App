@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/updateImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/updateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Contact Name"/>
+
+    <EditText
+        android:id="@+id/updateNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Contact Number"/>
+
+    <EditText
+        android:id="@+id/updateEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Contact E-mail"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/contactEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Edit"
+        android:layout_gravity="center"/>
+</LinearLayout>

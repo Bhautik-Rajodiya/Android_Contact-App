@@ -49,7 +49,7 @@ public class ContactAdpter extends RecyclerView.Adapter<ContactAdpter.DataViewHo
             public void onClick(View view) {
                 Intent intent = new Intent(activity, UpdateContactActivity.class);
                 intent.putExtra("name",contactModelList.get(position).name);
-                intent.putExtra("image",contactModelList.get(position).image);
+                intent.putExtra("image",contactModelList.get(position).image.toString());
                 intent.putExtra("number",contactModelList.get(position).number);
                 intent.putExtra("email",contactModelList.get(position).email);
                 intent.putExtra("position",position);
